@@ -9,8 +9,7 @@ class Calculator implements CalculatorInterface
 {
     public function calc(OperatorInterface $operator , $firstValue, $secondValue) {
         
-        //By typhinting the OperatorInterface we will be able call calculate function 
-        // safely even if the we switch the operator (We refer to it as Polymorphism)
+        //By typehinting the OperatorInterface we are able to call calculate method safely (This is what refered to it as Polymorphism)
         return $operator->calculate($firstValue, $secondValue);
     }
 }
