@@ -2,5 +2,5 @@
 namespace App\Services\Operators;
 
 interface OperatorInterface {
-    public function calculate(float $firstValue, float $secondValue);
+    public function calculate($firstValue, $secondValue);
 }
